@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lottie Clawd</title>
+  <meta name="description" content="Clawd, animated with Lottie. One card for each Clawd.">
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --card: #ffffff;
+      --stage: #f0eee6;
+      --text: #1f1e1d;
+      --muted: #6b6a66;
+      --line: #e3e0d6;
+      --accent: #d97757;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1f1e1d;
+        --card: #2a2927;
+        --stage: #3a3835;
+        --text: #f5f4ee;
+        --muted: #a9a79f;
+        --line: #3d3b38;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    }
+    header, main, footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    header { padding-top: 48px; padding-bottom: 24px; }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.2; }
+    h1 span { color: var(--accent); }
+    header p { margin: 0; color: var(--muted); }
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .stage {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      padding: 0;
+      border: 0;
+      background: var(--stage);
+      cursor: pointer;
+    }
+    .stage:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+    .info { padding: 12px 16px 16px; }
+    .info h2 { margin: 0 0 4px; font-size: 16px; }
+    .info p { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+    a { color: var(--accent); }
+    .info a { font-size: 14px; }
+    #status { color: var(--muted); }
+    footer { padding-top: 32px; padding-bottom: 48px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lottie <span>Clawd</span></h1>
+    <p>Clawd, animated. Click a Clawd to stop it or start it.</p>
+  </header>
+  <main>
+    <p id="status">Loading…</p>
+    <ul id="gallery"></ul>
+  </main>
+  <footer>
+    Clawd is the mascot of Claude Code, by Anthropic. This is a fan page.
+    <a href="https://github.com/bmeunier1974/lottie-clawd">Source on GitHub</a>.
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script>
+    const gallery = document.getElementById('gallery');
+    const status = document.getElementById('status');
+
+    function addCard(item) {
+      const path = 'animations/' + item.file;
+
+      const card = document.createElement('li');
+      card.className = 'card';
+
+      const stage = document.createElement('button');
+      stage.className = 'stage';
+      stage.type = 'button';
+      stage.setAttribute('aria-label', item.name + '. Stop or start the animation.');
+
+      const info = document.createElement('div');
+      info.className = 'info';
+      const name = document.createElement('h2');
+      name.textContent = item.name;
+      const description = document.createElement('p');
+      description.textContent = item.description || '';
+      const link = document.createElement('a');
+      link.href = path;
+      link.download = item.file;
+      link.textContent = 'Get the Lottie file';
+      info.append(name, description, link);
+
+      card.append(stage, info);
+      gallery.append(card);
+
+      const animation = lottie.loadAnimation({
+        container: stage,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: path,
+      });
+      stage.addEventListener('click', () => animation.togglePause());
+    }
+
+    fetch('animations/manifest.json')
+      .then((response) => {
+        if (!response.ok) throw new Error('manifest.json: HTTP ' + response.status);
+        return response.json();
+      })
+      .then((items) => {
+        items.forEach(addCard);
+        status.hidden = items.length > 0;
+        status.textContent = 'No Clawd yet.';
+      })
+      .catch((error) => {
+        status.textContent = 'The list of Clawds did not load. ' + error.message;
+      });
+  </script>
+</body>
+</html>
