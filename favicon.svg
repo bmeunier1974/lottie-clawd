@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-180 -180 360 360" shape-rendering="crispEdges">
+  <g fill="#d97757">
+    <rect x="-150" y="-120" width="300" height="180"/>
+    <rect x="-180" y="-60" width="30" height="60"/>
+    <rect x="150" y="-60" width="30" height="60"/>
+    <rect x="-120" y="60" width="30" height="60"/>
+    <rect x="-60" y="60" width="30" height="60"/>
+    <rect x="30" y="60" width="30" height="60"/>
+    <rect x="90" y="60" width="30" height="60"/>
+  </g>
+  <g fill="#141413">
+    <rect x="-90" y="-90" width="30" height="60"/>
+    <rect x="60" y="-90" width="30" height="60"/>
+  </g>
+</svg>
