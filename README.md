@@ -29,6 +29,16 @@ python3 tools/make_role_clawds.py
 
 Change the script, then run it. It writes the six files in `animations/` again.
 
+## Change a job Clawd
+
+A second script makes the 20 job Clawds. Each job is one an AI agent can do, from researcher to tutor.
+
+```sh
+python3 tools/make_job_clawds.py
+```
+
+It uses the parts of Clawd from `tools/make_role_clawds.py`. The list of jobs is `JOBS`, at the end of the script.
+
 ## See the page on your machine
 
 ```sh

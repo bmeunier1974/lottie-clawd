@@ -33,5 +33,105 @@
     "file": "clawd-engineer.json",
     "name": "Engineer Clawd",
     "description": "Clawd turns the gear with a wrench."
+  },
+  {
+    "file": "clawd-researcher.json",
+    "name": "Researcher Clawd",
+    "description": "Clawd reads with a lens and finds a fact."
+  },
+  {
+    "file": "clawd-writer.json",
+    "name": "Writer Clawd",
+    "description": "Clawd fills a page, line by line."
+  },
+  {
+    "file": "clawd-editor.json",
+    "name": "Editor Clawd",
+    "description": "Clawd strikes out a word and puts in a better one."
+  },
+  {
+    "file": "clawd-translator.json",
+    "name": "Translator Clawd",
+    "description": "Clawd turns one language into another."
+  },
+  {
+    "file": "clawd-data-analyst.json",
+    "name": "Data Analyst Clawd",
+    "description": "Clawd sorts the bars from small to large."
+  },
+  {
+    "file": "clawd-qa-tester.json",
+    "name": "QA Tester Clawd",
+    "description": "Clawd finds a bug and stomps on it."
+  },
+  {
+    "file": "clawd-code-reviewer.json",
+    "name": "Code Reviewer Clawd",
+    "description": "Clawd reads the diff and stamps it."
+  },
+  {
+    "file": "clawd-support-agent.json",
+    "name": "Support Agent Clawd",
+    "description": "Clawd types an answer and sends it."
+  },
+  {
+    "file": "clawd-sales-rep.json",
+    "name": "Sales Rep Clawd",
+    "description": "Clawd rings the bell for a new sale."
+  },
+  {
+    "file": "clawd-recruiter.json",
+    "name": "Recruiter Clawd",
+    "description": "Clawd looks at three people and picks one."
+  },
+  {
+    "file": "clawd-legal-reviewer.json",
+    "name": "Legal Reviewer Clawd",
+    "description": "Clawd weighs a contract until it is fair."
+  },
+  {
+    "file": "clawd-project-manager.json",
+    "name": "Project Manager Clawd",
+    "description": "Clawd moves every card to done."
+  },
+  {
+    "file": "clawd-product-manager.json",
+    "name": "Product Manager Clawd",
+    "description": "Clawd puts the notes in order, then changes the order."
+  },
+  {
+    "file": "clawd-designer.json",
+    "name": "Designer Clawd",
+    "description": "Clawd tries a new color, then another."
+  },
+  {
+    "file": "clawd-security-analyst.json",
+    "name": "Security Analyst Clawd",
+    "description": "Clawd blocks bad packets with a shield."
+  },
+  {
+    "file": "clawd-devops.json",
+    "name": "DevOps Clawd",
+    "description": "A server goes red. Clawd fixes it."
+  },
+  {
+    "file": "clawd-technical-writer.json",
+    "name": "Technical Writer Clawd",
+    "description": "Clawd turns code into a page of docs."
+  },
+  {
+    "file": "clawd-social-media-manager.json",
+    "name": "Social Media Manager Clawd",
+    "description": "Clawd posts and the count goes up."
+  },
+  {
+    "file": "clawd-assistant.json",
+    "name": "Assistant Clawd",
+    "description": "Clawd fills the calendar."
+  },
+  {
+    "file": "clawd-tutor.json",
+    "name": "Tutor Clawd",
+    "description": "Clawd shows that 1 + 1 = 2."
   }
 ]
