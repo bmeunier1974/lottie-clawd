@@ -19,6 +19,16 @@ A page that shows Clawd as Lottie animations. Each Clawd is personalized and ani
 
 3. Commit and push to `main`. GitHub Pages publishes the page again.
 
+## Change a role Clawd
+
+A script makes the six role Clawds: admin, accountant, marketing, CEO, coder and engineer.
+
+```sh
+python3 tools/make_role_clawds.py
+```
+
+Change the script, then run it. It writes the six files in `animations/` again.
+
 ## See the page on your machine
 
 ```sh

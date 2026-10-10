@@ -3,5 +3,35 @@
     "file": "clawd-hello.json",
     "name": "Clawd says hi",
     "description": "Clawd steps in place and waves."
+  },
+  {
+    "file": "clawd-admin.json",
+    "name": "Admin Clawd",
+    "description": "Clawd checks every box on the list."
+  },
+  {
+    "file": "clawd-accountant.json",
+    "name": "Accountant Clawd",
+    "description": "Clawd counts the coins as they fall."
+  },
+  {
+    "file": "clawd-marketing.json",
+    "name": "Marketing Clawd",
+    "description": "Clawd shouts the news and gets hearts."
+  },
+  {
+    "file": "clawd-ceo.json",
+    "name": "CEO Clawd",
+    "description": "Clawd makes the numbers go up, then winks."
+  },
+  {
+    "file": "clawd-coder.json",
+    "name": "Coder Clawd",
+    "description": "Clawd types code until the tests pass."
+  },
+  {
+    "file": "clawd-engineer.json",
+    "name": "Engineer Clawd",
+    "description": "Clawd turns the gear with a wrench."
   }
 ]
