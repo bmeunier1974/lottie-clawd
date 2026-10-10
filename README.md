@@ -1,7 +1,7 @@
 <h1 align="center">Lottie Clawd</h1>
 
 <p align="center">
-  <b>27 Clawds. Each one has a job, a prop and a loop.</b><br>
+  <b>47 Clawds. Each one has a job, a prop and a loop.</b><br>
   Small Lottie files. No build step.
 </p>
 
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://bmeunier1974.github.io/lottie-clawd/"><b>See all 27 move →</b></a>
+  <a href="https://bmeunier1974.github.io/lottie-clawd/"><b>See all 47 move →</b></a>
 </p>
 
 ---
@@ -26,7 +26,7 @@ Make these new Clawds for this repo: pirate, astronaut, barista.
 
 Clawd is the pixel crab mascot of Claude Code. Each Clawd in this repo is a
 Lottie animation with its own props and its own loop. I want the new ones to
-look like they belong to the same family as the 27 that are already here.
+look like they belong to the same family as the ones that are already here.
 
 How the repo works
 - index.html reads animations/manifest.json and plays each file with
@@ -35,11 +35,13 @@ How the repo works
 - tools/make_role_clawds.py holds the parts of Clawd (body, eyes, arms, legs,
   shadow) and the shape and keyframe helpers.
 - tools/make_job_clawds.py imports those helpers. It has one function for
-  each Clawd. Read both scripts before you write anything.
+  each Clawd, and a helper named cast that puts a Clawd together.
+  tools/make_agent_clawds.py is a second example. Read the scripts before
+  you write anything.
 
 What to make
 1. Write a new script, tools/make_<theme>_clawds.py. Import the helpers the
-   same way make_job_clawds.py does. Write one function for each Clawd.
+   same way make_agent_clawds.py does. Write one function for each Clawd.
    Do not write Lottie JSON by hand.
 2. The script writes animations/clawd-<name>.json for each Clawd.
 3. Add one entry for each Clawd to animations/manifest.json: file, name, and
@@ -83,6 +85,8 @@ Not your repo? Fork it first. Claude opens a pull request.
 
 **Jobs an AI can do** · Researcher · Writer · Editor · Translator · Data Analyst · QA Tester · Code Reviewer · Support Agent · Sales Rep · Recruiter · Legal Reviewer · Project Manager · Product Manager · Designer · Security Analyst · DevOps · Technical Writer · Social Media Manager · Assistant · Tutor
 
+**The agent team** · Prompt Engineer · Agent Orchestrator · Red Teamer · Fact Checker · Meeting Scribe · Librarian · Database Admin · Data Engineer · Software Architect · Release Manager · IT Helpdesk · Financial Analyst · Compliance Officer · Buyer · Customer Success · Community Moderator · SEO Specialist · UX Researcher · Travel Planner · Game Master
+
 ## Use a Clawd on your page
 
 Each card on [the page](https://bmeunier1974.github.io/lottie-clawd/) has a link to its Lottie file. You can also load a file from here:
@@ -120,12 +124,13 @@ The files are small: 9 KB to 31 KB each. The background is transparent.
 
 ## Change a Clawd
 
-Two scripts make 26 of the 27 files. Change a script, then run it. It writes its files in `animations/` again.
+Three scripts make 46 of the 47 files. Change a script, then run it. It writes its files in `animations/` again.
 
 | Script | What it makes |
 |---|---|
 | `python3 tools/make_role_clawds.py` | The six roles. It also holds the parts of Clawd and the helpers. |
 | `python3 tools/make_job_clawds.py` | The 20 jobs. The list is `JOBS`, at the end of the script. |
+| `python3 tools/make_agent_clawds.py` | The 20 Clawds of the agent team. The list is `JOBS`, at the end of the script. |
 
 ## See the page on your machine
 

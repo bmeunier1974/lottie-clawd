@@ -133,5 +133,105 @@
     "file": "clawd-tutor.json",
     "name": "Tutor Clawd",
     "description": "Clawd shows that 1 + 1 = 2."
+  },
+  {
+    "file": "clawd-prompt-engineer.json",
+    "name": "Prompt Engineer Clawd",
+    "description": "Clawd rewrites a prompt and gets a better answer."
+  },
+  {
+    "file": "clawd-agent-orchestrator.json",
+    "name": "Agent Orchestrator Clawd",
+    "description": "Clawd leads three small Clawds. Each one does its task."
+  },
+  {
+    "file": "clawd-red-teamer.json",
+    "name": "Red Teamer Clawd",
+    "description": "Clawd tests a wall and finds the weak brick."
+  },
+  {
+    "file": "clawd-fact-checker.json",
+    "name": "Fact Checker Clawd",
+    "description": "Clawd stamps one claim true and one claim false."
+  },
+  {
+    "file": "clawd-meeting-scribe.json",
+    "name": "Meeting Scribe Clawd",
+    "description": "Clawd turns a long speech into three notes."
+  },
+  {
+    "file": "clawd-librarian.json",
+    "name": "Librarian Clawd",
+    "description": "Clawd finds the right book on the shelf."
+  },
+  {
+    "file": "clawd-database-admin.json",
+    "name": "Database Admin Clawd",
+    "description": "Clawd sends a query and gets one row."
+  },
+  {
+    "file": "clawd-data-engineer.json",
+    "name": "Data Engineer Clawd",
+    "description": "Messy data goes in. Clean data comes out."
+  },
+  {
+    "file": "clawd-software-architect.json",
+    "name": "Software Architect Clawd",
+    "description": "Clawd draws three boxes and joins them."
+  },
+  {
+    "file": "clawd-release-manager.json",
+    "name": "Release Manager Clawd",
+    "description": "Clawd counts down and launches the rocket."
+  },
+  {
+    "file": "clawd-it-helpdesk.json",
+    "name": "IT Helpdesk Clawd",
+    "description": "Clawd turns it off and on again."
+  },
+  {
+    "file": "clawd-financial-analyst.json",
+    "name": "Financial Analyst Clawd",
+    "description": "Clawd draws the line, then the forecast."
+  },
+  {
+    "file": "clawd-compliance-officer.json",
+    "name": "Compliance Officer Clawd",
+    "description": "Clawd checks the rules until the light is green."
+  },
+  {
+    "file": "clawd-buyer.json",
+    "name": "Buyer Clawd",
+    "description": "Clawd compares three prices and picks the lowest."
+  },
+  {
+    "file": "clawd-customer-success.json",
+    "name": "Customer Success Clawd",
+    "description": "Clawd helps, and the customer smiles."
+  },
+  {
+    "file": "clawd-community-moderator.json",
+    "name": "Community Moderator Clawd",
+    "description": "Clawd removes a rude message. A kind one comes in."
+  },
+  {
+    "file": "clawd-seo-specialist.json",
+    "name": "SEO Specialist Clawd",
+    "description": "Clawd moves a page from place 3 to place 1."
+  },
+  {
+    "file": "clawd-ux-researcher.json",
+    "name": "UX Researcher Clawd",
+    "description": "Clawd marks the place where the cursor gets lost."
+  },
+  {
+    "file": "clawd-travel-planner.json",
+    "name": "Travel Planner Clawd",
+    "description": "Clawd puts three pins on a map. A plane flies the route."
+  },
+  {
+    "file": "clawd-game-master.json",
+    "name": "Game Master Clawd",
+    "description": "Clawd rolls a die and gets a six."
   }
 ]
